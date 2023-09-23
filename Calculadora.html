@@ -11,12 +11,11 @@
         button{
             height: 37px;
             width: 75px;
-            background: #00C214;
+            background: #044444;
             color: #fff;
             border: 0;
             display: inline;
             margin-top: 50%;
-            
         }
     </style>
     <script type="text/javascript" charset="utf-8">
@@ -40,21 +39,33 @@
                 alert("a subtração de: "+v1+" menos "+v2+" é igual a: "+sub+" que e um valor negativo.");
             }
         }
-        function multiplicacao() {
-            let v1 = parseInt(prompt("Digite o primeiro numero: "));
-            let v2 = parseInt(prompt("Digite o segundo numero: "));
-            let m = v1*v2;
-            if (m > 0) {
-                alert("a multiplicação de "+v1+" vezes "+v2+" é igual a: "+m+" que é um valor positivo.");
+             function multiplicacao() {
+            let v1 = parseInt(prompt("digite o primeiro valor:"));
+            let v2 = parseInt(prompt("digite o segundo valor"));
+            let sub = v1 * v2;
+            if (sub > 0) {
+                alert("a multiplicação de "+v1+" vezes "+v2+" é igual a: "+sub+ " que e um valor positivo");
             } else {
-                alert("A multiplicação de ")
+                alert("a multiplicação de: "+v1+" vezes "+v2+" é igual a: "+sub+" que e um valor negativo.");
             }
         }
+             function divisao() {
+            let v1 = parseInt(prompt("digite o primeiro valor:"));
+            let v2 = parseInt(prompt("digite o segundo valor"));
+            let sub = v1 / v2;
+            if (sub > 0) {
+                alert("a divisão de "+v1+" dividido por "+v2+" é igual a: "+sub+ " que e um valor positivo");
+            } else {
+                alert("a divisão de: "+v1+" dividido por "+v2+" é igual a: "+sub+" que e um valor negativo.");
+            }
+        }
+     
     </script>
 </head>
 <body>
     <button type="submit" onclick="soma()">somar</button>
     <button type="submit" onclick="subtracao()">subtrair</button>
     <button type="submit" onclick="multiplicacao()">multiplicar</button>
+    <button type="submit" onclick="divisao()">dividir</button>
 </body>
 </html
